@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#define NUM 15
 
 int main()
 {
-	int c[15], x[15], y[15], j=14, k=0;
+	int c[NUM], x[NUM], y[NUM], k=0;
 
-	for(int i=1;i<=15;i++)
+	for(int i=1;i<=NUM;i++)
 	{
 		printf("digite o %d numero de x:", i);
 		scanf("%d", &x[i-1]);
@@ -13,13 +13,13 @@ int main()
 		scanf("%d", &y[i-1]);
 	}
 
-	for (int i = 0; i < 15; i++)
+	for (int i = 0; i < NUM; i++)
 	{
-		k = j - i;
+		k = (NUM - 1) - i;
 		c[i] = x[i] + y[k];
 	}
 
-	for (int i = 0; i < 15; i++)
+	for (int i = 0; i < NUM; i++)
 	{
 		printf("\nC[%d] : %d", i+1, c[i]);
 	}
