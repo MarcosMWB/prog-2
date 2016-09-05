@@ -3,7 +3,7 @@
 
 int main()
 {
-	int c[NUM], x[NUM], y[NUM], k=0;
+	int c[NUM], x[NUM], y[NUM];
 
 	for(int i=1;i<=NUM;i++)
 	{
@@ -15,8 +15,7 @@ int main()
 
 	for (int i = 0; i < NUM; i++)
 	{
-		k = (NUM - 1) - i;
-		c[i] = x[i] + y[k];
+		c[i] = x[i] + y[(NUM - 1) - i];
 	}
 
 	for (int i = 0; i < NUM; i++)
