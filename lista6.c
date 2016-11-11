@@ -5,7 +5,7 @@
 
 int main(){
     FILE *arq;
-    int i=0, quantidade, codigo, index=0;
+    int i=0, quantidade, codigo;
     char arq_aux, nome[40];
     arq = fopen("cadastro.txt","r");
     float preco;
