@@ -1,0 +1,23 @@
+#include<stdlib.h>
+#include<stdio.h>
+
+double sqroot(double square)
+{
+    double root=square/3;
+    int i;
+    if (square <= 0) return 0;
+    for (i=0; i<32; i++)
+        root = (root + square / root) / 2;
+    return root;
+}
+
+int main(){
+    double x;
+    
+    printf("num:");
+    scanf("%lf", &x);
+    
+    printf("raiz de %.1lf = %.1lf", x, sqroot(x));
+
+return 0;    
+}
